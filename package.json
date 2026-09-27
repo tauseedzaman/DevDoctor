@@ -1,0 +1,40 @@
+{
+  "name": "devdoctor",
+  "version": "0.1.0",
+  "description": "Diagnose why a project won't run on your machine or CI.",
+  "type": "module",
+  "bin": {
+    "devdoctor": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tauseedzaman/DevDoctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tauseedzaman/DevDoctor/issues"
+  },
+  "homepage": "https://github.com/tauseedzaman/DevDoctor#readme",
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "check": "npm run build && node dist/cli.js"
+  },
+  "keywords": [
+    "developer-tools",
+    "cli",
+    "diagnostics",
+    "devops",
+    "ci"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
